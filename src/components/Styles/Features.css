@@ -130,7 +130,7 @@
 @media (max-height: 765px) {
   .bluebox--little{
     max-width: 90%;
-    transform: translate(-550px, -350px);
+    transform: translate(-550px, -390px);
     z-index: -10;
   }
 }
