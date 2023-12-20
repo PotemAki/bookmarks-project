@@ -115,6 +115,13 @@
     height: 130vh;
   }
 }
+@media (max-height: 765px) {
+  .bluebox--little{
+    max-width: 90%;
+    transform: translate(-150px, -360px);
+    z-index: -10;
+  }
+}
 @media (max-height: 685px) {
   .features--container {
     height: 150vh;
