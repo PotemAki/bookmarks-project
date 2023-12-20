@@ -1,0 +1,79 @@
+/* FAQ Container Styles */
+.faq--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 0px 30px 0px;
+  height: 80vh;
+}
+.faq--title {
+  font-size: 31px;
+  font-weight: 500;
+  text-align: center;
+}
+.faq--desc {
+  color: var(--secondary-color); 
+  line-height: 1.6;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Accordion Button Styles */
+.accordion--button:hover {
+  color: var(--redish-color);
+}
+
+.faq--button {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: white;
+  padding: 13px 25px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.faq--button:active {
+  background-color: white;
+  color: var(--primary-color);
+}
+.typography{
+  font-family: 'Rubik' !important; 
+  font-size: 18px !important; 
+  transform: translatex(-12px) !important;
+}
+
+@media (max-width: 1250px) {
+  .faq--container {
+    gap: 80px;
+    padding: 120px 0px 120px 0px;
+    height: 100%;
+  }
+  .faq--title {
+    font-size: 24px;
+
+  }
+  .faq--desc {
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .faq--top{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 33px;
+  }
+  .faq--group{
+    padding: 0px 33px;
+  }
+  .accordion--button{
+    width: 100% !important;
+  }
+  .typography{
+    font-size: 15px !important;
+  }
+}

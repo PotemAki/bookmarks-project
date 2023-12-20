@@ -1,0 +1,129 @@
+/* Download Container Styles */
+.download--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 135px;
+  gap: 90px;
+}
+
+.download--title {
+  font-size: 31px;
+  font-weight: 500;
+  text-align: center;
+}
+.download--desc {
+  color: var(--secondary-color);
+  max-width: 550px;
+  line-height: 1.6;
+  text-align: center;
+}
+.download--group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Download Card Styles */
+.download--card,
+.download--card2,
+.download--card3 {
+  width: 250px;
+  height: 300px;
+  background-color: #ffffff;
+  padding: 25px 0px 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.download--card img {
+  width: 110px;
+}
+
+.card--dots {
+  width: 100% !important;
+}
+
+.card--title {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card--desc {
+  color: var(--secondary-color);
+  font-size: 13px;
+  text-align: center;
+}
+
+.card--bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card--bottom button {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 10px 25px;
+  margin-top: 18px;
+}
+.card--bottom button:active {
+  background-color: white;
+  color: var(--primary-color);
+}
+/* Download Card2 and Card3 Transformations */
+.download--card2 {
+  transform: translateY(35px);
+}
+.download--card3 {
+  transform: translateY(70px);
+}
+
+@media (max-width: 1250px) {
+  .download--group{
+    flex-direction: column;
+  }
+  .download--container {
+    padding: 0px 33px;
+    gap: 60px;
+    margin-top: -50px;
+  }
+  .download--top{
+    display: flex;
+    flex-direction: column;
+  }
+  .download--title {
+    font-size: 24px;
+  }
+  .download--desc {
+    font-size: 15px;
+  }
+  .download--card,
+  .download--card2,
+  .download--card3 {
+    width: 280px;
+  }
+  .card--bottom button {
+    padding: 10px 35px;
+  }
+}
+@media (min-height: 1130px) {
+  .download--container {
+    margin-top: -130px
+  }
+}

@@ -1,0 +1,246 @@
+
+
+/* Footer Styles */
+.footer--container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Footer Styles */
+.footer--top {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.footer--top h2 {
+  width: 360px;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.footer--joined,
+.footer-numbers {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.footer--joined {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  gap: 0px;
+  transform: translateX(-20px);
+}
+
+.footer-numbers {
+  width: 100px;
+  text-align: end;
+}
+
+/* Email Section Styles */
+.footer--email {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  height: 50px;
+}
+
+.footer--input,
+.footer--input2 {
+  height: 30px;
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  background-color: white !important;
+}
+
+.footer--input2 {
+  background: url(../../assets/icon-error.svg) no-repeat scroll 217px 9px;
+  background-size: 18px;
+}
+
+.footer--input2:focus,
+.footer--input:focus {
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.4; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  opacity: 0.4;
+}
+
+.footer--warning {
+  background-color: var(--redish-color);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.footer--warning div {
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  padding: 5px;
+}
+
+/* Bottom Footer Styles */
+.footer--bottom {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 85px;
+  padding: 10px 175px 10px 190px;
+  background-color: var(--text-color);
+  z-index: 5;
+}
+
+.bottom--left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 535px;
+}
+
+.footer--buttons,
+.footer--button,
+.button--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--button,
+.button--footer {
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.footer--button {
+  border: 2px solid var(--redish-color);
+  border-radius: 5px;
+  color: white;
+  background-color: var(--redish-color);
+  padding: 10px 15px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.1s;
+  transform: translateX(15px);
+}
+
+.footer--button:active {
+  background-color: white;
+  color: var(--redish-color);
+}
+
+.button--footer {
+  background-color: var(--text-color);
+  color: hsl(0, 0%, 100%);
+  transition: 0.1s;
+  margin-right: 30px;
+}
+
+.button--footer:active {
+  color: var(--redish-color);
+}
+
+.footer--media {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.social--svg {
+  cursor: pointer; 
+  fill: #FFF
+}
+
+.social--svg:active {
+  display: flex;
+  fill: hsl(0, 94%, 66%);
+  justify-content: center;
+}
+
+
+@media (max-width: 1250px) {
+  .footer--bottom {
+    justify-content: space-around;
+    gap: 40px;
+    padding: 35px 10px 30px 10px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .footer--input2 {
+    background: url(../../assets/icon-error.svg) no-repeat scroll 280px 9px;
+  }
+  .footer--top h2 {
+    width: 90%;
+    font-size: 23px;
+  }
+  .bottom--left {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .button--footer {
+    margin-right: 0px;
+  }
+
+  .footer--buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer--media {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer--top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 0px;
+    height: 300px;
+  }
+
+  .footer--email {
+    width: 100%;
+    gap: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .footer--button {
+    width: 100%;
+    transform: translateX(0px);
+  }
+  .footer--input,
+  .footer--input2 {
+  width: 290px;
+  }
+}

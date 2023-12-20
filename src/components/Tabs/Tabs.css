@@ -1,0 +1,137 @@
+/* Tabs Container Styles */
+.tab1--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.tab2--right,
+.tab1--right {
+  width: 50%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tab2--right {
+  transform: translate(41px);
+}
+
+/* Tab Title Styles */
+.tab1--title {
+  font-size: 31px;
+  font-weight: 500;
+}
+
+/* Tab Description Styles */
+.tab1--desc {
+  color: var(--secondary-color);
+  line-height: 1.3;
+  max-width: 550px;
+}
+
+/* Tab Button Styles */
+.tab1--button {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: white;
+  padding: 13px 25px;
+  cursor: pointer;
+  transition: 0.1s;
+  margin-top: 32px;
+}
+
+.tab1--button:active {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+/* Tab Left Image Styles */
+.tab1--left,
+.tab2--left,
+.tab3--left {
+  max-width: 600px;
+}
+
+.tab1--left img {
+  position: relative;
+  left: 2%;
+  bottom: -35px;
+  width: 520px;
+}
+
+.tab2--left img {
+  position: relative;
+  left: 14%;
+  bottom: -35px;
+  width: 450px;
+}
+
+.tab3--left img {
+  position: relative;
+  left: 4%;
+  bottom: -28px;
+  width: 450px;
+}
+
+@media (max-width: 1250px) {
+  .tab1--container {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .tab3--left img,
+  .tab2--left img,
+  .tab1--left img {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  .tab2--left img {
+    transform: translatey(-4px);
+  }
+
+  .tab2--right,
+  .tab1--right {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(0px);
+  }
+  
+  /* Tab Title Styles */
+  .tab2--title,
+  .tab1--title {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Tab Description Styles */
+  .tab2--desc,
+  .tab1--desc {
+    font-size: 15px;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tab1--button{
+    display: none;
+  }
+}
+@media (max-height: 765px) {
+  .tab1--container {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+  }
+}

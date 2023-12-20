@@ -1,0 +1,122 @@
+/* Features Container Styles */
+.features--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 135px;
+  gap: 90px;
+  overflow: hidden;
+  margin-bottom: 170px;
+}
+.features--widget {
+  min-height: 600px;
+}
+.features--title {
+  font-size: 31px;
+  font-weight: 500;
+  text-align: center;
+}
+.features--desc {
+  color: var(--secondary-color); 
+  max-width: 550px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Different approach for box background than on the main page */
+.box2--container {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  z-index: -10;
+}
+.box2--container svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-63%, -15%);
+  width: 400%;
+  height: 100%;
+  z-index: -10;
+}
+
+.features--widget2{
+  display: none;  
+}
+.features--widget2 p {
+  cursor: pointer;
+  color: var(--secondary-color);           
+}
+.features--widget2 p:hover{
+  color: var(--redish-color);
+}
+.features--buttons2{
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+.features--inside{
+  max-width: 500px;
+  width: 100%;
+}
+.bluebox--little{
+  max-width: 90%;
+  transform: translate(-150px, -400px);
+  z-index: -10;
+}
+.active--divider{
+  color: var(--redish-color);
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1250px) {
+  .features--container {
+    padding: 0px 33px;
+    gap: 0px;
+    height: 100vh;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
+  .features--widget {
+    display: none;
+  }
+  .features--widget2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  .features--title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .features--desc {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+  .features--buttonlite{
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+/* height only */
+@media (max-height: 895px) {
+.features--container {
+    height: 130vh;
+  }
+}
+@media (max-height: 708px) {
+  .features--container {
+    height: 130vh;
+  }
+}
+@media (max-height: 685px) {
+  .features--container {
+    height: 150vh;
+  }
+}
