@@ -62,7 +62,7 @@
 }
 .bluebox--little{
   max-width: 90%;
-  transform: translate(-150px, -400px);
+  transform: translate(-535px, -400px);
   z-index: -10;
 }
 .active--divider{
@@ -102,6 +102,18 @@
     font-size: 15px;
     font-weight: 500;
   }
+  .bluebox--little{
+    max-width: 90%;
+    transform: translate(-575px, -380px);
+    z-index: -10;
+  }
+}
+@media (max-width: 425px) {
+  .bluebox--little{
+    max-width: 90%;
+    transform: translate(-535px, -400px);
+    z-index: -10;
+  }
 }
 
 /* height only */
@@ -118,7 +130,7 @@
 @media (max-height: 765px) {
   .bluebox--little{
     max-width: 90%;
-    transform: translate(-150px, -360px);
+    transform: translate(-550px, -350px);
     z-index: -10;
   }
 }

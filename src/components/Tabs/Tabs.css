@@ -91,7 +91,7 @@
   .tab1--left img {
     position: relative;
     left: 0%;
-    width: 100%;
+    width: 320px;
   }
   .tab2--left img {
     transform: translatey(-4px);
@@ -126,12 +126,5 @@
 
   .tab1--button{
     display: none;
-  }
-}
-@media (max-height: 765px) {
-  .tab1--container {
-    margin-top: 50px;
-    flex-direction: column;
-    gap: 50px;
   }
 }

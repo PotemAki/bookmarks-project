@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Michal-boookmarks/static/css/main.8aa80d94.css",
-    "main.js": "/Michal-boookmarks/static/js/main.0e2e7d67.js",
+    "main.css": "/Michal-boookmarks/static/css/main.c90df26e.css",
+    "main.js": "/Michal-boookmarks/static/js/main.532e3855.js",
     "static/js/787.5ade190e.chunk.js": "/Michal-boookmarks/static/js/787.5ade190e.chunk.js",
     "static/media/illustration-features-tab-3.svg": "/Michal-boookmarks/static/media/illustration-features-tab-3.a4206aab7946773b29b702492d2d014b.svg",
     "static/media/illustration-features-tab-2.svg": "/Michal-boookmarks/static/media/illustration-features-tab-2.e933bd6d921c537d7743e08ea4ec488e.svg",
@@ -19,12 +19,12 @@
     "static/media/icon-close.svg": "/Michal-boookmarks/static/media/icon-close.b04dc29397de9c9f194fb075c140e966.svg",
     "static/media/icon-close-dark.svg": "/Michal-boookmarks/static/media/icon-close-dark.216b778f6236f009858f7900aace77e0.svg",
     "static/media/icon-hamburger.svg": "/Michal-boookmarks/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
-    "main.8aa80d94.css.map": "/Michal-boookmarks/static/css/main.8aa80d94.css.map",
-    "main.0e2e7d67.js.map": "/Michal-boookmarks/static/js/main.0e2e7d67.js.map",
+    "main.c90df26e.css.map": "/Michal-boookmarks/static/css/main.c90df26e.css.map",
+    "main.532e3855.js.map": "/Michal-boookmarks/static/js/main.532e3855.js.map",
     "787.5ade190e.chunk.js.map": "/Michal-boookmarks/static/js/787.5ade190e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aa80d94.css",
-    "static/js/main.0e2e7d67.js"
+    "static/css/main.c90df26e.css",
+    "static/js/main.532e3855.js"
   ]
 }

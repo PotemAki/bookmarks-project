@@ -132,8 +132,8 @@ export default function Features() {
             </div>}
         </div>
         <div className="bluebox--little">
-        <svg width="300%" height="500" xmlns="http://www.w3.org/2000/svg">
-              <rect x="-355" y="-150" width="90%" height="350px" rx="100" fill="hsl(231, 69%, 60%)"/>
+        <svg width="400%" height="500" xmlns="http://www.w3.org/2000/svg">
+              <rect x="-355" y="-150" width="100%" height="350px" rx="100" fill="hsl(231, 69%, 60%)"/>
         </svg>
             </div>
       </div>
