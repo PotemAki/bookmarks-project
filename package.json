@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://potemaki.github.io",
+  "homepage": "https://potemaki.github.io/bookmarks-project",
   "eslintConfig": {
     "extends": [
       "react-app",
