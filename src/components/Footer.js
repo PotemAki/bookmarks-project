@@ -12,7 +12,7 @@ export default function Footer() {
     handleSubmit,
     formState: { errors }
   } = useForm();
-  const onSubmit = (values) => alert(JSON.stringify(`Your email: ${values.email}`));
+  const onSubmit = (values) => alert(JSON.stringify(`We have recieved your email: ${values.email}`));
   
   
   //reset joined number in 20s

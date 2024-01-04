@@ -11,16 +11,7 @@ export default function Header() {
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [wasUsed, setWasUsed] = useState(false)
 
-  function handleMouse() {
-    if (wasUsed) {
-        //this prevent modal to pop up everytime mouse enter header. I realize this wouldn't allow You to check buttons on header but if this was goal of exercise, then this is the option to be removed.
-      return
-    }
-    setIsModalOpen(true)
-    setWasUsed(true)
-  }
 
   function updateModalOpenState(isOpen) {
     if (isDrawerOpen) {
@@ -41,7 +32,7 @@ export default function Header() {
         isOpen = {isModalOpen} 
         onClose={() => updateModalOpenState(false)}
         />
-      <div className='header' onMouseEnter={handleMouse}>
+      <div className='header'>
       {!isDrawerOpen && <img src={logo} alt='logo'/>}
         <div className='header--buttons'>
           <button className='button--header1'>FEATURES</button>

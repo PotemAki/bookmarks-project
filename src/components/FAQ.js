@@ -37,7 +37,7 @@ export default function FAQ() {
           </AccordionSummary>
           <AccordionDetails sx={{maxWidth: '500px'}}>
             <Typography sx={{maxWidth: '500px', marginLeft:'-15px', fontFamily:'Rubik', color: 'hsl(229, 8%, 60%);'}}>
-              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligua. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie.
+            A bookmark is a handy tool that simplifies and enhances your web browsing experience. It allows you to save and easily revisit your favorite websites or specific web pages with just a click. Instead of memorizing or typing in long URLs every time you want to return to a particular site, a bookmark acts as a shortcut.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -55,7 +55,7 @@ export default function FAQ() {
           </AccordionSummary>
           <AccordionDetails sx={{maxWidth: '500px'}}>
             <Typography sx={{maxWidth: '500px', marginLeft:'-15px', fontFamily:'Rubik', color: 'hsl(229, 8%, 60%);'}}>
-              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligua. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie.
+            We appreciate your interest! To suggest a new browser, contact our support team via email contact form on the bottom. We value user feedback and are always open to exploring innovative ideas.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -72,7 +72,7 @@ export default function FAQ() {
           </AccordionSummary>
           <AccordionDetails sx={{maxWidth: '500px'}}>
             <Typography sx={{maxWidth: '500px', marginLeft:'-15px', fontFamily:'Rubik', color: 'hsl(229, 8%, 60%);'}}>
-              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligua. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie.
+            While we're currently in the process of developing a mobile app, our bookmark tool is accessible on mobile devices through your web browser. Simply visit our webpage on your mobile device, and enjoy the same streamlined bookmarking experience. Stay tuned for updates on our upcoming mobile app release, and in the meantime, make the most of our mobile-friendly web version!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -87,10 +87,9 @@ export default function FAQ() {
           >
             <Typography className='typography' variant="h6">What about other Chromium browsers?</Typography>
           </AccordionSummary>
-         
           <AccordionDetails sx={{maxWidth: '500px'}}>
             <Typography sx={{maxWidth: '500px', marginLeft:'-15px', fontFamily:'Rubik', color: 'hsl(229, 8%, 60%);'}}>
-              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligua. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie.
+            Our bookmark tool is designed to work seamlessly with various Chromium-based browsers. Whether you're using Chrome, Edge, or another Chromium browser, you can enjoy enhanced bookmarking features. Simply install our extension from the Chrome Web Store or your browser's extension marketplace to elevate your bookmarking experience across different Chromium platforms.
             </Typography>
           </AccordionDetails>
         </Accordion>

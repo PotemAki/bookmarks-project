@@ -24,23 +24,6 @@
   text-align: center;
 }
 
-/* Different approach for box background than on the main page */
-.box2--container {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  z-index: -10;
-}
-.box2--container svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-63%, -15%);
-  width: 400%;
-  height: 100%;
-  z-index: -10;
-}
-
 .features--widget2{
   display: none;  
 }
@@ -60,11 +43,6 @@
   max-width: 500px;
   width: 100%;
 }
-.bluebox--little{
-  max-width: 90%;
-  transform: translate(-535px, -400px);
-  z-index: -10;
-}
 .active--divider{
   color: var(--redish-color);
   display: flex;
@@ -78,6 +56,7 @@
     height: 100vh;
     margin-top: -100px;
     margin-bottom: 20px;
+    justify-content: flex-start;
   }
   .features--widget {
     display: none;
@@ -102,18 +81,6 @@
     font-size: 15px;
     font-weight: 500;
   }
-  .bluebox--little{
-    max-width: 90%;
-    transform: translate(-575px, -380px);
-    z-index: -10;
-  }
-}
-@media (max-width: 425px) {
-  .bluebox--little{
-    max-width: 90%;
-    transform: translate(-535px, -400px);
-    z-index: -10;
-  }
 }
 
 /* height only */
@@ -125,13 +92,6 @@
 @media (max-height: 708px) {
   .features--container {
     height: 130vh;
-  }
-}
-@media (max-height: 765px) {
-  .bluebox--little{
-    max-width: 90%;
-    transform: translate(-550px, -390px);
-    z-index: -10;
   }
 }
 @media (max-height: 685px) {

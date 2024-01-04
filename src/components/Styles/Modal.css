@@ -19,23 +19,11 @@
 .modal--button{
   position: absolute;
   right: 0%;
-  top: 0%;
+  top: 10%;
   width: 20px;
   transition: color 0.3s ease;
   cursor: pointer;
   z-index: 100;
-}
-.blueBox--modal{
-    position: absolute;
-    left: 0%;
-    top: 13%;
-    transform: translate(10%, 12%);
-    width: 40%;
-    height: 90%;
-    z-index: -10;
-    background-color: hsl(231, 69%, 60%);
-    border-top-right-radius: 230px;
-    border-bottom-right-radius: 160px;
 }
 @media (max-width: 1250px) {
   .box--container{
@@ -49,12 +37,6 @@
     width: 90%;
     position:relative;
   }
-  .blueBox--modal{
-    top: 15%;
-    transform: translate(-7.5%, 35%);
-    width: 80%;
-    height: 40%;
-}
 }
 @media (max-height: 765px) {
   .modal--container{

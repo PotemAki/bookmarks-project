@@ -1,14 +1,29 @@
 import './Styles/Features.css';
 import { Box, Tab, Slide, Divider } from '@mui/material'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import TabOne from './Tabs/TabOne'
 import TabTwo from './Tabs/TabTwo'
 import TabThree from './Tabs/TabThree'
+import imgTab1 from '../assets/illustration-features-tab-1.svg'
+import imgTab2 from '../assets/illustration-features-tab-2.svg'
+import imgTab3 from '../assets/illustration-features-tab-3.svg'
+
 
 export default function Features() {
   const [value, setValue] = useState('1')
   const [tab, setTab] = useState('1')
+
+
+  useEffect(() => {
+    // Preload images when the component mounts
+    const preloadImages = [imgTab1, imgTab2, imgTab3];
+    preloadImages.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  }, []);
+
   function handleChange(event, newValue) {
     setValue(newValue)
   }
@@ -66,11 +81,6 @@ export default function Features() {
               <Tab sx={{textTransform :"none"}} style={isActive('2')} disableRipple label='Speedy Searching' value='2' />
               <Tab  sx={{textTransform :"none"}} style={isActive('3')} disableRipple label='Easy Sharing' value='3' />
             </TabList>
-            <div className="box2--container">
-              <svg xmlns="http://www.w3.org/2000/svg">
-                <rect x="0" y="0" width="60%" height="340px" rx="160" fill="hsl(231, 69%, 60%)"/>
-              </svg>
-            </div>
           </Box>
             <Slide 
                 in={value === '1'}
@@ -131,11 +141,6 @@ export default function Features() {
               <TabThree />
             </div>}
         </div>
-        <div className="bluebox--little">
-        <svg width="400%" height="500" xmlns="http://www.w3.org/2000/svg">
-              <rect x="-355" y="-150" width="100%" height="350px" rx="100" fill="hsl(231, 69%, 60%)"/>
-        </svg>
-            </div>
       </div>
     </div>
     )

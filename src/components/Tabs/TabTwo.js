@@ -1,5 +1,5 @@
 import './Tabs.css';
-import imgTab1 from '../../assets/illustration-features-tab-2.svg'
+import imgTab2 from '../../assets/illustration-features-tab-2.svg'
 
 export default function TabOne() {
 
@@ -7,7 +7,7 @@ export default function TabOne() {
   return (
     <div className='tab1--container'>
       <div className='tab2--left'>
-        <img src={imgTab1} alt=''/>
+        <img src={imgTab2} alt=''/>
 
       </div>
       <div className='tab2--right'>
