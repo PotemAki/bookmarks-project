@@ -148,13 +148,13 @@ export default function Features() {
         </div>
         <div className='features--inside'>
             {tab === '1' && <div>
-              <TabOne />
+              <TabOne onButtonClick={() => {setOpen('tab1')}}/>
             </div>}
             {tab === '2' && <div>
-              <TabTwo />
+              <TabTwo onButtonClick={() => {setOpen('tab2')}}/>
             </div>}
             {tab === '3' && <div>
-              <TabThree />
+              <TabThree onButtonClick={() => {setOpen('tab3')}}/>
             </div>}
         </div>
       </div>
