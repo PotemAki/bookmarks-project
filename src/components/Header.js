@@ -1,44 +1,40 @@
 import './Styles/Header.css';
 import { Drawer, Box, Typography, IconButton, Divider} from '@mui/material';
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import hamburger from '../assets/icon-hamburger.svg'
 import close from '../assets/icon-close.svg'
 import logo from '../assets/logo-bookmark.svg'
 import logoWhite from '../assets/logo-bookmark-white2.svg'
-import TransitionsModal  from './Modal';
+
+import { scroller } from 'react-scroll';
 
 export default function Header() {
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-
-  function updateModalOpenState(isOpen) {
+ 
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
     if (isDrawerOpen) {
-      return
+      setIsDrawerOpen(false)
     }
-    setIsModalOpen(isOpen);
-  }
+  };
 
-  useEffect(() => {
-    setTimeout(()=>{
-      setIsModalOpen(true)
-    }, 30000);
-  }, [])
-  
   return (
     <div >
-        <TransitionsModal 
-        isOpen = {isModalOpen} 
-        onClose={() => updateModalOpenState(false)}
-        />
       <div className='header'>
       {!isDrawerOpen && <img src={logo} alt='logo'/>}
         <div className='header--buttons'>
-          <button className='button--header1'>FEATURES</button>
-          <button className='button--header1'>PRICING</button>
-          <button className='button--header1'>CONTACT</button>
-          <button className='button--header2'>LOGIN</button>
+          <button className='button--header1' 
+          onClick={() => scrollToSection('features')}>FEATURES</button>
+          <button className='button--header1'
+          onClick={() => scrollToSection('download')}>DOWNLOAD</button>
+          <button className='button--header1'
+          onClick={() => scrollToSection('faq')}>FAQ</button>
+          {/* <button className='button--header2'>LOGIN</button> */}
         </div>
         {isDrawerOpen && <div className='hamburger'></div>}
         {!isDrawerOpen && <div className='hamburger'> 
@@ -77,13 +73,16 @@ export default function Header() {
             </div>
             <div className='drawer--body'>
               <Divider sx={{ bgcolor: "hsl(229, 8%, 60%)", opacity:'0.4'}}/>
-              <div className='drawer--button1'>FEATURES</div>
+              <div className='drawer--button1'
+              onClick={() => scrollToSection('features')}>FEATURES</div>
               <Divider sx={{ bgcolor: "hsl(229, 8%, 60%)", opacity:'0.4'}}/>
-              <div className='drawer--button1'>PRICING</div>
+              <div className='drawer--button1' 
+              onClick={() => scrollToSection('download')}>DOWNLOAD</div>
               <Divider sx={{ bgcolor: "hsl(229, 8%, 60%)", opacity:'0.4'}}/>
-              <div className='drawer--button1'>CONTACT</div>
+              <div className='drawer--button1'
+              onClick={() => scrollToSection('faq')}>FAQ</div>
               <Divider sx={{ bgcolor: "hsl(229, 8%, 60%)", opacity:'0.4'}}/>
-              <button className='drawer--button2'>LOGIN</button>
+              {/* <button className='drawer--button2'>LOGIN</button> */}
             </div>
             <div className='drawer--bottom'>
               <div className='drawer--media'>

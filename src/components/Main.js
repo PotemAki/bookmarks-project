@@ -1,9 +1,16 @@
 import './Styles/Main.css';
 import imgHero from '../assets/illustration-hero.svg'
-
+import { scroller } from 'react-scroll';
 
 export default function Main() {
 
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
 
   return (
     <div className='main--container'>
@@ -11,8 +18,10 @@ export default function Main() {
         <h2 className='left--title'>A Simple Bookmark Manager</h2>
         <div className='left--desc'>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</div>
         <div>
-          <button className='left--button1'>Get it on Chrome</button>
-          <button className='left--button2'>Get it on Firefox</button>
+          <button className='left--button1'
+          onClick={() => scrollToSection('download')}>Get it on Chrome</button>
+          <button className='left--button2'
+          onClick={() => scrollToSection('download')}>Get it on Firefox</button>
         </div>
       </div>
       <div className='main--right'>

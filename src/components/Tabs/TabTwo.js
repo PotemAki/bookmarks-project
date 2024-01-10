@@ -1,7 +1,7 @@
 import './Tabs.css';
 import imgTab2 from '../../assets/illustration-features-tab-2.svg'
 
-export default function TabOne() {
+export default function TabOne(props) {
 
 
   return (
@@ -14,7 +14,8 @@ export default function TabOne() {
           <h3 className='tab1--title'>Intelligent search</h3>
           <div className='tab1--desc'>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</div>
           <div>
-            <button className='tab1--button'>More Info</button>
+            <button className='tab1--button'
+            onClick={props.onButtonClick}>More Info</button>
           </div>
       </div>
     </div>

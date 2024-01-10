@@ -18,7 +18,7 @@ export default function FAQ() {
   )
 
   return (
-    <div className='faq--container'>
+    <div className='faq--container'  id="faq">
         <div className='faq--top'>
           <h3 className='faq--title'>Frequently Asked Questions</h3>
           <div className='faq--desc'>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</div>
@@ -95,7 +95,6 @@ export default function FAQ() {
         </Accordion>
         <Divider />
         </div>
-        <button className='faq--button'>More Info</button>
     </div>
     )
 }

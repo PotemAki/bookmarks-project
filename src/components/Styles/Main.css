@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 0px 135px 80px 135px;
-  height: 40vh;
+  max-height: 70vh;
   gap: 50px;
   overflow: hidden;
 }
@@ -84,9 +84,10 @@
   .main--container {
     justify-content: flex-start;
     padding: 0px 33px 0px 33px;
-    height: 70vh;
+    max-height: none;
     gap: 0px;
     flex-direction: column-reverse;
+    margin-top: -200px;
   }
   .main--left {
     width: 420px;
@@ -132,27 +133,5 @@
 @media (max-height: 1300px) and (max-width: 1000px) {
   .main--right img {
     width: 350px;
-  }
-}
-@media (max-height: 1135px) {
-  .main--container {
-    height: 80vh;
-  }
-}
-@media (max-height: 995px) {
-  .main--container {
-    height: 90vh;
-  }
-}
-@media (max-height: 879px) {
-  .main--container {
-    height: 110vh;
-  }
-}
-
-
-@media (max-height: 725px) {
-  .main--container {
-    height: 120vh;
   }
 }

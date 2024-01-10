@@ -2,9 +2,23 @@ import './Styles/Footer.css';
 import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form';
 import logo from '../assets/logo-bookmark-white.svg'
+import { scroller } from 'react-scroll';
 
 export default function Footer() {
   const [joinedAmount, setJoinedAmount] = useState(35000)
+  const [sendEmail, setSendEmail] = useState(false);
+
+  let messageTimeout;
+
+  const handleSendClick = () => {
+    if (messageTimeout) {
+      clearTimeout(messageTimeout);
+    }
+    setSendEmail(true);
+    messageTimeout = setTimeout(() => {
+      setSendEmail(false);
+    }, 2000);
+  };
 
   //useForm to validate email when form submitted
   const {
@@ -12,19 +26,18 @@ export default function Footer() {
     handleSubmit,
     formState: { errors }
   } = useForm();
-  const onSubmit = (values) => alert(JSON.stringify(`We have recieved your email: ${values.email}`));
-  
-  
+  const onSubmit = (values) => handleSendClick()
+
+
   //reset joined number in 20s
   const totalDuration = 20000; 
-
   useEffect(() => {
     let startTime;
     function animate(time) {
       if (!startTime) startTime = time;
       const progress = time - startTime;
       const percentage = Math.min(1, progress / totalDuration);
-      setJoinedAmount(Math.round(35000 - percentage * 35000));
+      setJoinedAmount(Math.round(percentage * 35000));
 
       if (percentage < 1) {
         requestAnimationFrame(animate);
@@ -43,8 +56,19 @@ export default function Footer() {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
+
   return (
     <div className='footer--container'>
+      {sendEmail && <div className='message-container'>
+          <span className="message">We have recieved your email!</span>
+        </div>}
       <div className='footer--top'>
         <div className='footer--joined'>
           <div className='footer-numbers'>{formattedJoinedAmount(joinedAmount)}</div>
@@ -68,11 +92,14 @@ export default function Footer() {
       </div>
       <div className='footer--bottom'>
         <div className='bottom--left'>
-          <img src={logo} alt='logo'/>
+          <img src={logo} alt='logo' onClick={() => scrollToSection('header')}/>
           <div className='footer--buttons'>
-            <button className='button--footer'>FEATURES</button>
-            <button className='button--footer'>PRICING</button>
-            <button className='button--footer'>CONTACT</button>
+            <button className='button--footer'
+            onClick={() => scrollToSection('features')}>FEATURES</button>
+            <button className='button--footer'
+            onClick={() => scrollToSection('download')}>DOWNLOD</button>
+            <button className='button--footer'
+            onClick={() => scrollToSection('faq')}>FAQ</button>
           </div>
         </div>
         <div className='footer--media'>

@@ -1,7 +1,7 @@
 import './Tabs.css';
 import imgTab1 from '../../assets/illustration-features-tab-1.svg'
 
-export default function TabOne() {
+export default function TabOne(props) {
 
 
   return (
@@ -14,7 +14,8 @@ export default function TabOne() {
           <h3 className='tab1--title'>Bookmark in one click</h3>
           <div className='tab1--desc'>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</div>
           <div>
-            <button className='tab1--button'>More Info</button>
+            <button className='tab1--button'
+             onClick={props.onButtonClick}>More Info</button>
           </div>
       </div>
     </div>
