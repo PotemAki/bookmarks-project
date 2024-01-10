@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bookmarks-project/static/css/main.a63f08e3.css",
-    "main.js": "/bookmarks-project/static/js/main.e7ecea91.js",
+    "main.css": "/bookmarks-project/static/css/main.71b37c1d.css",
+    "main.js": "/bookmarks-project/static/js/main.ebc5ab7b.js",
     "static/js/787.5ade190e.chunk.js": "/bookmarks-project/static/js/787.5ade190e.chunk.js",
     "static/media/illustration-features-tab-3.svg": "/bookmarks-project/static/media/illustration-features-tab-3.a4206aab7946773b29b702492d2d014b.svg",
     "static/media/illustration-features-tab-2.svg": "/bookmarks-project/static/media/illustration-features-tab-2.e933bd6d921c537d7743e08ea4ec488e.svg",
@@ -17,14 +17,13 @@
     "static/media/icon-error.svg": "/bookmarks-project/static/media/icon-error.a46cc66573dea1a15acb.svg",
     "static/media/logo-opera.svg": "/bookmarks-project/static/media/logo-opera.ff14e4763945338fe002017c72e7e597.svg",
     "static/media/icon-close.svg": "/bookmarks-project/static/media/icon-close.b04dc29397de9c9f194fb075c140e966.svg",
-    "static/media/icon-close-dark.svg": "/bookmarks-project/static/media/icon-close-dark.216b778f6236f009858f7900aace77e0.svg",
     "static/media/icon-hamburger.svg": "/bookmarks-project/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
-    "main.a63f08e3.css.map": "/bookmarks-project/static/css/main.a63f08e3.css.map",
-    "main.e7ecea91.js.map": "/bookmarks-project/static/js/main.e7ecea91.js.map",
+    "main.71b37c1d.css.map": "/bookmarks-project/static/css/main.71b37c1d.css.map",
+    "main.ebc5ab7b.js.map": "/bookmarks-project/static/js/main.ebc5ab7b.js.map",
     "787.5ade190e.chunk.js.map": "/bookmarks-project/static/js/787.5ade190e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a63f08e3.css",
-    "static/js/main.e7ecea91.js"
+    "static/css/main.71b37c1d.css",
+    "static/js/main.ebc5ab7b.js"
   ]
 }
