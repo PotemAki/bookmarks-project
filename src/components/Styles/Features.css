@@ -122,4 +122,28 @@
     font-size: 15px;
     font-weight: 500;
   }
+
+  .alert-dialog-title{
+    font-size: 24px !important;
+  }
+  .alert-dialog-description{
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 325px) {
+  .alert-dialog-actions{
+    display: flex ;
+    flex-direction: column;
+
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .dialog--button2,
+  .dialog--button {
+    width: 70%;
+}
+  .dialog--button{
+    margin-bottom: 10px;
+    margin-left: 6px;
+  }
 }

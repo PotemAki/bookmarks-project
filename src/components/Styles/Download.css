@@ -141,8 +141,11 @@
     padding: 10px 35px;
   }
 }
-/* @media (min-height: 1130px) {
-  .download--container {
-    margin-top: -130px
+
+@media (max-width: 300px) {
+  .download--card,
+  .download--card2,
+  .download--card3 {
+    width: 100%;
   }
-} */
+}

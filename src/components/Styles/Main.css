@@ -135,3 +135,31 @@
     width: 350px;
   }
 }
+@media (max-width: 318px) {
+  .left--title {
+    max-width: 220px;
+  }
+  
+  .left--desc {
+    max-width: 200px;
+  }
+  .main--lite{
+    display: none;
+  }
+  .main--right img {
+    width: 100%;
+    transform: translateY(0px);
+  }
+  .main--container {
+    gap: 260px;
+    margin-top: 50px;
+  }
+  .button--group{
+    display: flex;
+    flex-direction: column;
+  }
+  .left--button1 {
+    margin-right: 0px;
+    margin-bottom: -10px;
+  }
+}

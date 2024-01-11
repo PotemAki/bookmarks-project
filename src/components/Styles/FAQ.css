@@ -80,3 +80,13 @@
     font-size: 15px !important;
   }
 }
+@media (max-width: 300px) {
+  .faq--container {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 270px) {
+  .faq--container {
+    margin-bottom: 200px;
+  }
+}

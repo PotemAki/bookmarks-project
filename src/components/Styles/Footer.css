@@ -241,6 +241,21 @@
   }
   .footer--input,
   .footer--input2 {
-  width: 290px;
+  width: 250px;
+  }
+
+}
+
+@media (max-width: 365px) {
+  .footer--joined {
+    width: 100%;
+    font-size: 12px;
+  }
+  .footer-numbers {
+    font-size: 12px;
+  }
+  .footer--input,
+  .footer--input2 {
+  width: 85%;
   }
 }

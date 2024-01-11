@@ -130,3 +130,14 @@
     margin-top: 20px;
   }
 }
+@media (max-width: 318px) {
+  .tab1--container {
+    max-width: 200px;
+    gap: 50px
+  }
+  .tab3--left img,
+  .tab2--left img,
+  .tab1--left img {
+    width: 100%;
+  }
+}

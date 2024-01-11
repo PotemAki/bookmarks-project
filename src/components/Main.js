@@ -17,7 +17,7 @@ export default function Main() {
       <div className='main--left'>
         <h2 className='left--title'>A Simple Bookmark Manager</h2>
         <div className='left--desc'>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</div>
-        <div>
+        <div className='button--group'>
           <button className='left--button1'
           onClick={() => scrollToSection('download')}>Get it on Chrome</button>
           <button className='left--button2'
